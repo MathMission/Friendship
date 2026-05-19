@@ -11,10 +11,19 @@
 
 <style>
 
+/* 🌈 RAINBOW BACKGROUND */
 body {
   font-family: "Roboto", sans-serif;
-  background: #f5f5f5;
   color: #222;
+
+  background: linear-gradient(
+    135deg,
+    #fff0f3,
+    #fff7e6,
+    #f0fff4,
+    #e6f7ff,
+    #f3e8ff
+  );
 }
 
 /* HEADER */
@@ -49,16 +58,20 @@ body {
   font-weight: 600;
 }
 
-/* SECTIONS */
+/* SECTIONS (slightly improved so rainbow looks soft behind it) */
 .section {
-  background: #fff;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(2px);
+
   margin: 20px auto;
   padding: 30px;
   max-width: 1000px;
+
   border-radius: 8px;
   border: 1px solid #e6e6e6;
 }
 
+/* SECTION TITLE */
 .section h2 {
   font-size: 22px;
   margin-bottom: 15px;
