@@ -11,7 +11,7 @@
 
 <style>
 
-/* 🌈 RAINBOW BACKGROUND */
+/* 🌈 BACKGROUND */
 body {
   font-family: "Roboto", sans-serif;
   color: #222;
@@ -46,7 +46,7 @@ body {
   font-size: 16px;
 }
 
-/* INSTAGRAM LINK */
+/* INSTAGRAM */
 .insta {
   margin-top: 12px;
   font-size: 14px;
@@ -58,39 +58,67 @@ body {
   font-weight: 600;
 }
 
-/* SECTIONS (slightly improved so rainbow looks soft behind it) */
+/* 🌈 FUN CTA BUTTONS (less corporate, more playful) */
+.cta-buttons {
+  margin-top: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 999px; /* pill shape = less corporate */
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5px;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+/* SIGN UP BUTTON (FUN GRADIENT) */
+.btn-primary {
+  background: linear-gradient(90deg, #ff4d6d, #ffb84d, #4db8ff);
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.btn-primary:hover {
+  transform: scale(1.03);
+}
+
+/* CONTACT BUTTON (SOFT) */
+.btn-secondary {
+  background: white;
+  border: 2px solid #dcdcdc;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #f8f8f8;
+  transform: scale(1.03);
+}
+
+/* SECTIONS */
 .section {
   background: rgba(255,255,255,0.92);
-  backdrop-filter: blur(2px);
-
   margin: 20px auto;
   padding: 30px;
   max-width: 1000px;
-
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid #e6e6e6;
 }
 
-/* SECTION TITLE */
+/* HEADERS */
 .section h2 {
   font-size: 22px;
   margin-bottom: 15px;
-  border-left: 4px solid #1f4e79;
+  border-left: 4px solid #ff4d6d;
   padding-left: 10px;
 }
 
-/* IMAGE */
-.banner-img {
-  width: 100%;
-  border-radius: 8px;
-  margin-top: 15px;
-}
-
-/* TIMELINE */
-.timeline-item {
-  margin-bottom: 15px;
-  padding-left: 10px;
-  border-left: 3px solid #ccc;
+/* RAINBOW DECOR ELEMENTS */
+.rainbow {
+  font-size: 20px;
+  margin-right: 6px;
 }
 
 /* LIST */
@@ -112,13 +140,15 @@ li {
   background: #f1f1f1;
   margin-top: 10px;
   font-weight: 500;
+  border-radius: 8px;
 }
 
 .panel {
   display: none;
   padding: 12px;
   background: white;
-  border: 1px solid #ddd;
+  border-left: 4px solid #ff4d6d;
+  border-radius: 6px;
 }
 
 /* FOOTER */
@@ -129,6 +159,11 @@ footer {
   font-size: 14px;
 }
 
+.small {
+  color: #777;
+  font-size: 13px;
+}
+
 </style>
 </head>
 
@@ -136,147 +171,148 @@ footer {
 
 <!-- HEADER -->
 <div class="header">
-  <h1>Sunway Pre-U Friendship Run</h1>
+
+  <h1>
+    🌈 Sunway Pre-U Friendship Run 🌈
+  </h1>
 
   <p>
-    A community running and walking event designed to bring together Sunway Pre-U students,
-    alumni, and friends in a shared experience of movement and connection.
+    A community running and walking event where students, alumni, and friends come together
+    to move, laugh, and connect 💛
   </p>
 
+  <!-- CTA -->
+  <div class="cta-buttons">
+
+    <a href="https://forms.gle/YOUR_FORM_LINK" class="btn btn-primary">
+      🏃‍♂️ Sign Up Now
+    </a>
+
+  </div>
+
   <div class="insta">
-    📸 Follow updates on Instagram:
+    📸 Follow updates:
     <a href="https://instagram.com/" target="_blank">
       @sunwayfriendshiprun
     </a>
   </div>
+
 </div>
 
 <!-- OVERVIEW -->
 <div class="section">
-  <h2>Overview</h2>
+  <h2><span class="rainbow">🌈</span> Overview</h2>
 
   <p>
-    The Friendship Run is a non-competitive community event open to all fitness levels.
-    Participants may choose to walk, run-walk, or run the course at their own pace.
+    A non-competitive event for all fitness levels. Walk, run, or run-walk —
+    just come and enjoy the experience together ✨
   </p>
 
-  <img class="banner-img"
-       src="https://images.unsplash.com/photo-1526676037777-05a232554f77?q=80&w=1600&auto=format&fit=crop"
-       alt="Friendship Run community image">
 </div>
 
 <!-- KEY DATES -->
 <div class="section">
-  <h2>Key Dates</h2>
+  <h2><span class="rainbow">🌈</span> Key Dates</h2>
 
-  <div class="timeline-item">
-    <strong>Early Bird Registration</strong><br>
-    Includes access to training resources and preparation guidance.
-  </div>
+  <p><strong>Early Bird 🐣</strong> – Training access + preparation resources</p>
+  <p><strong>Last Minute ⚡</strong> – Walkers welcome, join anytime</p>
+  <p><strong>Race Day 🏁</strong> – Let’s go!</p>
 
-  <div class="timeline-item">
-    <strong>Last Minute Registration</strong><br>
-    For participants joining closer to race day (walkers welcome).
-  </div>
-
-  <div class="timeline-item">
-    <strong>Race Day</strong><br>
-    Final event day details will be shared closer to the date.
-  </div>
 </div>
 
 <!-- CATEGORIES -->
 <div class="section">
-  <h2>Categories</h2>
+  <h2><span class="rainbow">🌈</span> Categories</h2>
 
   <ul>
-    <li>Walker</li>
-    <li>Run-Walk</li>
-    <li>Runner</li>
+    <li>🚶 Walker</li>
+    <li>🏃‍♀️ Run-Walk</li>
+    <li>🏃 Runner</li>
   </ul>
 
-  <p><em>Participants may change category during bib collection.</em></p>
+  <p class="small">You can change anytime during bib collection.</p>
 </div>
 
 <!-- ENTITLEMENTS -->
 <div class="section">
-  <h2>Entitlements</h2>
+  <h2><span class="rainbow">🌈</span> Entitlements</h2>
 
   <ul>
-    <li>Participant T-shirt</li>
-    <li>Finisher Medal</li>
-    <li>Lucky Draw Entry</li>
-    <li>Hydration Support</li>
+    <li>👕 Event T-shirt</li>
+    <li>🏅 Finisher Medal</li>
+    <li>🎁 Lucky Draw</li>
+    <li>💧 Hydration Support</li>
   </ul>
+
 </div>
 
 <!-- RACE PACK -->
 <div class="section">
-  <h2>Race Pack Collection</h2>
+  <h2><span class="rainbow">🌈</span> Race Pack Collection</h2>
 
   <p>
-    Date: To be announced<br>
-    Venue: Sunway College<br>
-    Time: 10:00 AM – 5:00 PM
+    📍 Sunway College<br>
+    📅 Date: TBA<br>
+    ⏰ Time: 10:00 AM – 5:00 PM
   </p>
+
 </div>
 
 <!-- COURSE -->
 <div class="section">
-  <h2>Race Course</h2>
+  <h2><span class="rainbow">🌈</span> Race Course</h2>
 
   <p>
-    The route is designed to be safe, accessible, and beginner-friendly.
-    Water stations will be placed along the course.
+    A safe, beginner-friendly route with water stations along the way 💧
   </p>
 
-  <p><em>Route map will be released closer to race day.</em></p>
+  <p class="small">Route map will be shared closer to race day.</p>
+
 </div>
 
 <!-- TRAINING -->
 <div class="section">
-  <h2>Race Plans</h2>
+  <h2><span class="rainbow">🌈</span> Race Plans</h2>
 
   <ul>
-    <li>Beginner Walk Plan</li>
-    <li>Run-Walk Program</li>
-    <li>5K Preparation Plan</li>
+    <li>Beginner Walk Plan 🚶</li>
+    <li>Run-Walk Plan 🔁</li>
+    <li>5K Prep Plan 🏃</li>
   </ul>
 
-  <p>
-    No training required — participants may complete the event at a comfortable pace.
-  </p>
+  <p class="small">No training required — just show up and enjoy.</p>
+
 </div>
 
 <!-- FAQ -->
 <div class="section">
-  <h2>FAQ</h2>
+  <h2><span class="rainbow">🌈</span> FAQ</h2>
 
   <button class="accordion">Who can join?</button>
   <div class="panel">
-    <p>Sunway Pre-U students, alumni, and friends are welcome.</p>
+    <p>Sunway Pre-U students, alumni, and friends 💛</p>
   </div>
 
   <button class="accordion">Do I need to be fit?</button>
   <div class="panel">
-    <p>No. The event is designed for all fitness levels, including beginners.</p>
+    <p>Nope — beginners are welcome 😊</p>
   </div>
 
   <button class="accordion">Can I walk the whole route?</button>
   <div class="panel">
-    <p>Yes. Walking is fully encouraged.</p>
+    <p>Yes! Walking is fully encouraged 🚶</p>
   </div>
 
   <button class="accordion">Can I change categories?</button>
   <div class="panel">
-    <p>Yes. Category changes can be made during bib collection.</p>
+    <p>Yes, during bib collection 👍</p>
   </div>
 
 </div>
 
 <!-- FOOTER -->
 <footer>
-  Sunway Pre-U Friendship Run © 2026
+  🌈 Sunway Pre-U Friendship Run © 2026 🌈
 </footer>
 
 <script>
